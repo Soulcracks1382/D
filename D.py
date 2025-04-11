@@ -681,7 +681,7 @@ async def attack(update: Update, context: CallbackContext):
 
     # Send attack details to the user
     await context.bot.send_message(chat_id=chat_id, text=( 
-        f"*⚔️ Attack Successfully Initiated! ⚔️*\n"
+        f"*🚀 Attack Initiated! 🚀*\n"
         f"*🎯 Target: {ip}:{port}*\n"
         f"*🕒 Duration: {duration} seconds*\n"
         f"*✨ Method: Black Hat Antiban Injected*\n"
