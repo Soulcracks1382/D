@@ -629,7 +629,7 @@ async def attack(update: Update, context: CallbackContext):
 
     args = context.args
     if len(args) != 3:
-        await context.bot.send_message(chat_id=chat_id, text="*⚠️ Invalid command format. Usage: /attack <ip> <port> <duration>*", parse_mode='Markdown')
+        await context.bot.send_message(chat_id=chat_id, text="*❌ Invalid command format. Usage correct format: /attack <ip> <port> <duration> Trigger an a powerful attack*", parse_mode='Markdown')
         return
 
     ip, port, duration = args
@@ -682,7 +682,8 @@ async def attack(update: Update, context: CallbackContext):
     # Send attack details to the user
     await context.bot.send_message(chat_id=chat_id, text=( 
         f"*🚀 Attack Initiated! 🚀*\n"
-        f"*🎯 Target: {ip}:{port}*\n"
+        f"*🎯 Target IP: {ip}*\n"
+        f"*🔌 Target Port: {port}*\n"
         f"*🕒 Duration: {duration} seconds*\n"
         f"*✨ Method: Black Hat Antiban Injected*\n"
         f"*🔥 Let the chaos battlefield ignite! 💥*"
