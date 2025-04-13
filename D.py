@@ -346,11 +346,11 @@ async def start(update: Update, context: CallbackContext):
 
     # Check if the user is allowed to use the bot
     if not await is_user_allowed(user_id):
-        await context.bot.send_message(chat_id=chat_id, text="*🔥 Welcome to the Black-Hat Flooder 🔥*\n\n*☣️ Status: ❌ Inactive*\n*🎟️ Redeem a valid key for again!*\n\n*🤖 Try for run this command: /help*", parse_mode='Markdown')
+        await context.bot.send_message(chat_id=chat_id, text="*🔥 Welcome to the Testing Flooder 🔥*\n\n*☣️ Status: ❌ Inactive*\n*🎟️ Redeem a valid key for again!*\n\n*🤖 Try for run this command: /help*", parse_mode='Markdown')
         return
 
     message = (
-        "*🔥 Welcome to the Black-Hat Flooder🔥*\n\n"
+        "*🔥 Welcome to the Testing Flooder🔥*\n\n"
         "*☣️ Status: ✅ Active*\n"
         "*💫 Trigger an a powerfull attack*\n\n"
         "*⚔️ Let the chaos unfold war begin! 💥*"
@@ -610,7 +610,7 @@ async def attack(update: Update, context: CallbackContext):
 
     # Check if the user is allowed to use the bot
     if not await is_user_allowed(user_id):
-        await context.bot.send_message(chat_id=chat_id, text="*⛔ Access denied!\n❌ You are not authorized to use this bot!\n🎟️ Redeem a valid subscription key\n💫 Purchase subscription key: @BlackHatDDoS*", parse_mode='Markdown')
+        await context.bot.send_message(chat_id=chat_id, text="*⛔ Access denied!\n❌ You are not authorized to use this bot!\n🎟️ Redeem a valid subscription key\n💫 Purchase subscription key: Owner Only*", parse_mode='Markdown')
         return
 
     # Check for cooldown
